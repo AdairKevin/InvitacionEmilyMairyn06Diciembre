@@ -59,9 +59,10 @@
 
 .album-art {
   width: 100%;
-  height: 150px;
-  background: url("../assets/img/portada.jpg") center/cover no-repeat;
+  height: 300px;
+  background: url("../assets/img/1\ \(8\).jpeg") center/cover no-repeat;
   background-position: top;
+  background-size: cover;
   border-radius: 15px;
   margin-bottom: 15px;
 }
