@@ -3,26 +3,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 :root {
   --bg-blanco: #f2f2f0;
-  --bg-color-1: #a69a85;
-  --bg-color-2: #6b7334;
-  --bg-color-3: #d9d5a7;
-  --bg-color-4: #d9a577;
+  --bg-color-1: #cdbfb1; /* Beige cálido */
+  --bg-color-2: #d9a48f; /* Blush durazno suave */
+  --bg-color-3: #f0e2d3; /* Beige claro */
+  --bg-color-4: #e2a78a; /* Blush más intenso, anaranjado rosado */
 
   --txt-body: #000000;
   --white: #ffffff;
   --gray: #989898;
 
-  --bg-verde-opacity-50: #d9a577;
+  --bg-verde-opacity-50: #f2cbb5;
 
   --bg-section-light: #fffaec;
   --bg-section-dark: #2c2c2c;
   --bg-footer: #8c7f65;
 
   --bg-gradient: linear-gradient(
-    131deg,
-    #eee6da -3.63%,
-    #8b7e64 60.5%,
-    #8c7f65 100.94%
+    135deg,
+    #f3e8e0 -5%,
+    #d7bfb2 40%,
+    #c9a89a 100%
   );
 
   --font-titulos: "Playfair Display", serif;
