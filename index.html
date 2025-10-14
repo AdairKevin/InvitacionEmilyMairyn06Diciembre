@@ -1,0 +1,340 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitacion Emily Mairyn</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+  </head>
+
+  <body class="center">
+    <div class="content">
+      <section class="section-home">
+        <div class="home-content">
+          <img class="home-img" alt="photo" src="./assets/img/portada1.jpeg" />
+        </div>
+      </section>
+
+      <section class="informacion-principal">
+        <div class="titulo">
+          <h1>Mis XV</h1>
+          <h2>Emily Mairyn</h2>
+          <p class="frase">
+            Gracias por acompañarnos en este día tan significativo
+          </p>
+        </div>
+      </section>
+
+      <section class="musica">
+        <div class="music-card">
+          <div class="album-art"></div>
+          <div class="song-title">Mi Canción</div>
+          <div class="artist-name">Photograph - Ed Sheeran</div>
+
+          <button class="play-button" id="playPauseBtn">▶</button>
+
+          <div class="progress-container">
+            <div class="progress" id="progressBar"></div>
+          </div>
+
+          <audio
+            id="audioPlayer"
+            src="./assets/music/Ed Sheeran - Photograph (Official Music Video).mp3"
+          ></audio>
+          <!-- Cambia por tu archivo mp3 -->
+        </div>
+      </section>
+
+      <section class="section-info">
+        <div class="overlay-section-info">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-info">
+          <div class="info-primary">
+            <h1>Emily Mairyn</h1>
+            <p>
+              Con amor, la bendición de Dios y el apoyo de mi familia, celebro
+              este momento especial contigo.
+            </p>
+          </div>
+          <div class="info-secundary">
+            <div class="info-content">
+              <b>Mis Padres</b>
+              <ul>
+                <li>Marco Rivera Rosales</li>
+                <li>Grisell Jiménez García</li>
+              </ul>
+            </div>
+            <div class="info-content">
+              <b>Mi Madrina</b>
+              <ul>
+                <li>Sandra Rosales Alcántara</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-date">
+            <div class="date-info center">
+              <img width="200" src="./assets/img/separador.png" alt="rings" />
+              <p class="date-text">
+                Estamos a pocos momentos de celebrar juntos esta gran alegría.
+              </p>
+            </div>
+            <div class="date-box">
+              <h2>SÁBADO</h2>
+              <ul class="center">
+                <li>DIC</li>
+                <li>06</li>
+                <li>17:30</li>
+              </ul>
+            </div>
+            <ul class="date-time">
+              <li>
+                <div class="time_number" id="dias"></div>
+                <div class="time_txt">Días</div>
+              </li>
+              <li>
+                <div class="time_number" id="horas"></div>
+                <div class="time_txt">Horas</div>
+              </li>
+              <li>
+                <div class="time_number" id="minutos"></div>
+                <div class="time_txt">Minutos</div>
+              </li>
+              <li>
+                <div class="time_number" id="segundos"></div>
+                <div class="time_txt">Segundos</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-itinerario">
+        <div class="titulo-itinerario">
+          <img
+            width="120"
+            src="./assets/icons/ChatGPT Image 14 oct 2025, 02_26_22 p.m..png"
+            alt="church"
+            fill="#000000"
+          />
+        </div>
+        <div class="info-itinerario">
+          <h2>Programa de la fiesta</h2>
+          <ul>
+            <li>Ceremonia religiosa 4:30 PM</li>
+            <li>Recepción: 5:30 PM</li>
+            <li>Vals y brindis: 7:00 PM</li>
+            <li>Pastel: 8:30 PM</li>
+            <li>Batucada: 9:00 PM</li>
+            <li>Baile libre: 10:00 PM</li>
+            <li>Hasta que el cuerpo aguante</li>
+          </ul>
+        </div>
+
+        <div class="agradecimiento-familia">
+          <p>Disfruta la fiesta con cariño la familia Rivera Jiménez</p>
+        </div>
+      </section>
+
+      <section class="section-galeria-carousel">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/portada.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/WhatsApp Image 2025-10-11 at 1.04.11 PM.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/1 (1).jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/1 (2).jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="assets/img/1 (5).jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/1 (6).jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-place">
+        <div class="overlay-section-place">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-place">
+          <div class="place-info center">
+            <img
+              width="75"
+              src="./assets/icons/church.svg"
+              alt="church"
+              fill="#000000"
+            />
+            <div class="place-txt">
+              <h2>Ceremonia</h2>
+              <b>4:30 PM</b>
+              <p>Parroquia Del Señor de Mazatepec</p>
+            </div>
+          </div>
+          <a
+            class="place-btn"
+            href="https://maps.app.goo.gl/ENqjgB24q5xYcnHPA"
+            target="_blank"
+          >
+            VER UBICACIÓN
+          </a>
+        </div>
+      </section>
+
+      <section class="section-place-salon">
+        <div class="overlay-section-place">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-place-salon">
+          <div class="place-info center">
+            <img width="120" src="./assets/icons/bola.png" alt="disco" />
+            <div class="place-txt fiesta">
+              <h2>Fiesta</h2>
+              <b>5:30 PM</b>
+              <p>
+                Océano de las tempestades mz9 lt7 entre cráter tycho y cráter
+                atlas Col. Selene
+              </p>
+            </div>
+          </div>
+          <a
+            class="place-btn"
+            href="https://maps.app.goo.gl/A7jiW6mSYpvzq6pk7"
+            target="_blank"
+          >
+            VER UBICACIÓN
+          </a>
+        </div>
+      </section>
+
+      <section class="section-galeria">
+        <section class="section-info-adicional">
+          <div class="info-clothes">
+            <img height="70" src="./assets/icons/Clothes.svg" alt="clothes" />
+            <div class="clothes-txt">
+              <h2>Vestimenta</h2>
+              <p>
+                La vestimenta es formal, ¡ven con lo que más te guste! Los
+                colores blush y beige estan reservados para la quinceañera evita
+                usarlos por favor.
+              </p>
+            </div>
+          </div>
+          <div class="info-separator">
+            <img width="200" src="./assets/img/separador.png" alt="separator" />
+          </div>
+          <div class="info-envelope">
+            <img width="70" src="./assets/icons/envelope.svg" alt="envelope" />
+            <div class="envelope-txt"></div>
+            <h2>Mesa de regalos</h2>
+            <p>
+              Tu presencia es el mejor regalo, pero si deseas acompañarla con un
+              detalle, hemos preparado una lluvia de sobres para recibir tus
+              buenos deseos de manera especial.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section class="section-message">
+        <div class="overlay-section-message">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="box-message">
+          <p>
+            Los mejores momentos de la vida <br />
+            merecen ser compartidos
+          </p>
+          <b>¡Gracias por acompañarnos!</b>
+          <button class="confirmar">
+            <a href="https://wa.link/873r57"> Confirmar asistencia </a>
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        Design by
+        <a
+          href="https://www.facebook.com/profile.php?id=61568997140138"
+          target="_blank"
+          >Mirai</a
+        >
+        @2025
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
