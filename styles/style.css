@@ -571,3 +571,10 @@ footer {
 footer a {
   color: var(--bg-color-4);
 }
+
+.carouseL button {
+}
+
+.carouseL span {
+  background-color: #d9a48f;
+}
